@@ -10,13 +10,17 @@
   "dependencies": {
     "expo": "~37.0.3",
     "react": "~16.9.0",
-    "react-dom": "~16.9.0",
+    "react-art": "^16.13.1",
+    "react-dom": "^16.13.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-37.0.1.tar.gz",
-    "react-native-web": "~0.11.7"
+    "react-native-web": "^0.12.2",
+    "react-router-dom": "^5.1.2",
+    "react-router-native": "^5.1.2",
+    "react-scripts": "^3.4.1"
   },
   "devDependencies": {
-    "babel-preset-expo": "~8.1.0",
-    "@babel/core": "^7.8.6"
+    "@babel/core": "^7.8.6",
+    "babel-preset-expo": "~8.1.0"
   },
   "private": true
 }
