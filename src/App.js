@@ -1,15 +1,22 @@
-import React from "react";
-import { StyleSheet, Text, View, FlatList } from "react-native";
-import pokemon from "./pokemonStore";
+import React, {useState } from "react";
+import { StyleSheet, View } from "react-native";
+import { Router, Switch, Route } from "./routing";
+import Home from "./Home";
+import Pokemon from "./Pokemon";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <FlatList
-        keyExtractor={pokemon => pokemon.number}
-        data={pokemon}
-        renderItem={({ item }) => <Text>{item.name}</Text>}
-      />
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/pokemon">
+            <Pokemon />
+          </Route>
+        </Switch>
+      </Router>
     </View>
   );
 }
