@@ -1,11 +1,11 @@
 import React from "react";
-import { View, Text, Flatlist } from "react-native";
+import { View, Text, FlatList } from "react-native";
 import pokemon from "./pokemonStore";
 
 export default function Home(props) {
   return (
     <View>
-      <Flatlist
+      <FlatList
         keyExtractor={pokemon => pokemon.number}
         data={pokemon}
         renderItem={({ item }) => <Text>{item.name}</Text>}
